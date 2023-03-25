@@ -14,9 +14,6 @@ using System.Windows.Shapes;
 
 namespace ZaverecnaPrace
 {
-    /// <summary>
-    /// Interakční logika pro Projects.xaml
-    /// </summary>
     public partial class Projects : Window
     {
         public Projects()
