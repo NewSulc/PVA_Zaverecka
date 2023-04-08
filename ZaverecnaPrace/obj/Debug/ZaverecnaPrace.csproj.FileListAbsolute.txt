@@ -31,3 +31,9 @@ C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\bin\Debug\Microsoft.Xa
 C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\bin\Debug\Microsoft.Xaml.Behaviors.xml
 C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\Board.g.cs
 C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\Board.baml
+C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\ZaverecnaPrace.csproj.SuggestedBindingRedirects.cache
+C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\ZaverecnaPrace.csproj.CopyComplete
+C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\CardInfo.g.cs
+C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\CardInfo.baml
+C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\CardInfoChange.g.cs
+C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\CardInfoChange.baml
