@@ -37,3 +37,11 @@ C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\CardInfo.g.c
 C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\CardInfo.baml
 C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\CardInfoChange.g.cs
 C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\CardInfoChange.baml
+C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\NameBoard.g.cs
+C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\NameBoard.baml
+C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\NewProfile.g.cs
+C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\NewProfile.baml
+C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\Profile.g.cs
+C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\Profile.baml
+C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\DeleteUser.g.cs
+C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\DeleteUser.baml

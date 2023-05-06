@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 namespace ZaverecnaPrace
 {
@@ -28,72 +29,64 @@ namespace ZaverecnaPrace
 
         private void AddCard(object sender, RoutedEventArgs e)
         {
+            //delaní listu vetsi
             int listIndex = int.Parse((sender as FrameworkElement).Name.Substring((sender as FrameworkElement).Name.Length - 1));
             boardClass.cardLists[listIndex].Height += 50;
             boardClass.panelLists[listIndex].Height += 50;
             boardClass.buttonLists[listIndex].Margin = new Thickness(0, boardClass.buttonLists[listIndex].Margin.Top + 50, 0, 0);
 
+            //zobrazit zadávané okno
             CardInfo info = new CardInfo();
+            info.board = this;
             info.ShowDialog();
             AddCardToList(listIndex);
-        }
+        } // works
 
         private void AddCardToList(int index)
         {
+            //vytvareni karty
             Grid card = new Grid();
-
             card.MouseUp += cardClick;
-
             card.Height = 50;
             card.Width = 250;
+            card.Name = newName;
             boardClass.cardNumber++;
             Border newBorder = new Border();
             newBorder.BorderThickness = new Thickness(2);
             newBorder.BorderBrush = Brushes.Black;
             card.Children.Add(newBorder);
      
+            //vytvrareni textu uvnitr karty
             TextBlock txt = new TextBlock();
             txt.Text = newName;
             txt.HorizontalAlignment = HorizontalAlignment.Center;
             txt.VerticalAlignment = VerticalAlignment.Center;
             txt.FontSize = 18;
 
-            CardClass newCard = new CardClass();
-            newCard.cardName = newName;
-            newCard.indexInList = boardClass.panelLists.Count;
-            card.Name = newCard.cardName;
-            boardClass.cardClassLists.Add(newCard);
-
             card.Children.Add(txt);
             card.Background = Brushes.White;
             boardClass.panelLists[index].Children.Add(card);
-        }
+        } //works
 
-        private void cardClick(object sender, RoutedEventArgs e)
+        public void cardClick(object sender, RoutedEventArgs e)
         {
-            Grid cdString = (Grid)sender;
-
-            CardInfoChange changeCardInfo = new CardInfoChange();
-            for (int i = 0; i < boardClass.cardClassLists.Count; i++)
-            {
-                if (boardClass.cardClassLists[i].cardName == cdString.Name)
-                {
-                    changeCardInfo.name = boardClass.cardClassLists[i].cardName;
-                }
-            }
+            string str = ((Grid)sender).Name;
+            Trace.WriteLine("Here is the name: " + str);
+            CardInfoChange changeCardInfo = new CardInfoChange(str, "nigga");
             changeCardInfo.ShowDialog();
-        }
+        } //otevre upravovaci okno
 
         private void AddList(object sender, RoutedEventArgs e)
         {
             AddListButton.Margin = new Thickness(AddListButton.Margin.Left + 500, AddListButton.Margin.Top, AddListButton.Margin.Right, AddListButton.Margin.Bottom);
             AddListToBoard();
-        }
+        } //prida list poznamek
 
         private void AddListToBoard()
         {
             int index = boardClass.cardLists.Count;
 
+            //Pridani listu a jeho jmena
             Grid list = new Grid();
             list.Name = "CardPanel" + index;
             list.Height = 150;
@@ -126,6 +119,6 @@ namespace ZaverecnaPrace
             boardClass.cardLists.Add(list);
             boardClass.panelLists.Add(stackPan);
             boardClass.buttonLists.Add(addCardBtn);
-        }
+        } //Prida list poznamek do boardu
     }
 }

@@ -14,7 +14,8 @@
             </LinearGradientBrush>
         </Grid.Background>
         <TextBox x:Name="CardInfoName" HorizontalAlignment="Center" Margin="0,33,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="356" Height="35" FontSize="25"/>
-        <TextBox x:Name="CardInfoName_Copy" HorizontalAlignment="Center" Margin="0,80,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="356" Height="127" FontSize="10"/>
+        <TextBox x:Name="CardInfoDesc" HorizontalAlignment="Center" Margin="0,80,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="356" Height="127" FontSize="10"/>
+        <Button Content="Submit" HorizontalAlignment="Left" Margin="447,0,0,0" VerticalAlignment="Center" Click="Submit_Click"/>
 
     </Grid>
 </Window>

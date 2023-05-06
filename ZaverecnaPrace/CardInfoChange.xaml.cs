@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,12 +17,19 @@ namespace ZaverecnaPrace
 {
     public partial class CardInfoChange : Window
     {
-        public string name, description;
 
-        public CardInfoChange()
+        public CardInfoChange(string name, string description)
         {
             InitializeComponent();
             CardInfoName.Text = name;
+            CardInfoDesc.Text = description;
+        }
+
+        private void Submit_Click(object sender, RoutedEventArgs e)
+        {
+            ((Board)Application.Current.MainWindow).newName = CardInfoName.Text;
+            ((Board)Application.Current.MainWindow).newDescription = CardInfoDesc.Text;
+            this.Close();
         }
     }
 }

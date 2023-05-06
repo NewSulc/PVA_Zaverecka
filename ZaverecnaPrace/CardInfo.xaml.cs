@@ -19,6 +19,7 @@ namespace ZaverecnaPrace
     /// </summary>
     public partial class CardInfo : Window
     {
+        public Board board;
         public CardInfo()
         {
             InitializeComponent();
@@ -33,7 +34,7 @@ namespace ZaverecnaPrace
             }
             else
             {
-                ((Board)Application.Current.MainWindow).newName = CardName.Text;
+                board.newName = CardName.Text;
                 this.Close();
             }
         }
