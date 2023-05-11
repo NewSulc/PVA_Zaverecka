@@ -18,11 +18,14 @@ namespace ZaverecnaPrace
 {
     public partial class Projects : Window
     {
-        public string newBoardName;
+        public string newBoardName, userName, userPassword;
+        UserClass userProject = new UserClass("12345678", "12345678");
 
         public Projects()
         {
             InitializeComponent();
+            userProject.name = userName; userProject.password = userPassword;
+            userProject.createProject("newProject");
         }
 
         private void CreateBoard(object sender, RoutedEventArgs e)

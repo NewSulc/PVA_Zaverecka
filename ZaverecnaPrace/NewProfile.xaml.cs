@@ -42,32 +42,14 @@ namespace ZaverecnaPrace
             }
 
             if (userData.Contains(UserName.Text)) errorMsg.Text = "This username already exist";
-            else if (!checkIfPossible(Password.Password, true)) errorMsg.Text = "Password muset be longer than 6 characters and can't contain SPACE";
-            else if (!checkIfPossible(UserName.Text, false)) errorMsg.Text = "Wrong username";
+            else if (!UserClass.autorization(true, Password.Password)) errorMsg.Text = "Password muset be longer than 6 characters and can't contain SPACE";
+            else if (!UserClass.autorization(false, UserName.Text)) errorMsg.Text = "Wrong username";
             else
             {
                 string newUserData = UserName.Text + ";" + Password.Password + "\n";
                 File.AppendAllText("AllData/UserData.txt", newUserData);
                 this.Close();
             }
-        }
-
-        private bool checkIfPossible(string dataString, bool isPassword)
-        {
-            if (isPassword)
-            {
-                if (dataString.Length < 6 || dataString.Contains(" ")) return false;
-            }
-            else
-            {
-                char[] validChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789._".ToCharArray();
-                for (int i = 0; i < dataString.Length; i++)
-                {
-                    if (!validChars.Contains(dataString[i])) return false;
-                }
-            }
-
-            return true;
         }
     }
 }

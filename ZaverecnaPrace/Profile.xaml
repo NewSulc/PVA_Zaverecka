@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="Profile" Height="500" Width="300" Background="#FF004225">
     <Grid>
-        <Button x:Name="LogIn" Content="Log in" HorizontalAlignment="Center" Margin="0,365,0,0" VerticalAlignment="Top" Width="150" Height="30" FontSize="15" Click="Login_Click"/>
-        <Button x:Name="SignIn" Content="Sign in" HorizontalAlignment="Center" Margin="0,410,0,0" VerticalAlignment="Top" Width="100" Height="20" FontSize="8" Click="SignIn_Click"/>
-        <TextBox x:Name="PasswordText" HorizontalAlignment="Center" Margin="0,192,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="200" Height="30" FontWeight="Bold"/>
-        <ComboBox x:Name="UserDropdown" HorizontalAlignment="Center" Margin="0,149,0,0" VerticalAlignment="Top" Width="200" Height="30"/>
+        <Button x:Name="LogIn" Content="Log in" HorizontalAlignment="Center" Margin="0,365,0,0" VerticalAlignment="Top" Width="150" Height="30" FontSize="15" Click="Login_Click" Foreground="White" BorderBrush="White" Background="{x:Null}"/>
+        <Button x:Name="SignIn" Content="Sign in" HorizontalAlignment="Center" Margin="0,410,0,0" VerticalAlignment="Top" Width="100" Height="20" FontSize="8" Click="SignIn_Click" BorderBrush="White" Foreground="White" Background="{x:Null}"/>
+        <TextBox x:Name="PasswordText" HorizontalAlignment="Center" Margin="0,192,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="200" Height="30" FontWeight="Bold" Background="{x:Null}" BorderBrush="White" Foreground="White"/>
+        <ComboBox x:Name="UserDropdown" HorizontalAlignment="Center" Margin="0,149,0,0" VerticalAlignment="Top" Width="200" Height="30" Background="{x:Null}" BorderBrush="White" Foreground="#FF004225"/>
         <Button x:Name="DeleteUserBtn" Content="Delete" HorizontalAlignment="Left" Margin="230,20,0,0" VerticalAlignment="Top" Height="50" Width="50" Click="DeleteUser_Click"/>
     </Grid>
 </Window>

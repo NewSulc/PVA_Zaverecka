@@ -11,8 +11,6 @@ C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\ZaverecnaPra
 C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\ZaverecnaPrace.csproj.CoreCompileInputs.cache
 C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\ZaverecnaPrace.exe
 C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\ZaverecnaPrace.pdb
-C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\Login.g.cs
-C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\Login.baml
 C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\Projects.g.cs
 C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\obj\Debug\Projects.baml
 C:\Users\PC\Documents\GitHub\PVA_Zaverecka\ZaverecnaPrace\bin\Debug\ControlzEx.dll

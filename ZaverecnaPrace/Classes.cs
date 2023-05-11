@@ -29,24 +29,4 @@ namespace ZaverecnaPrace
         public string cardDescription;
         public int indexInList;
     }
-
-    internal class BoardClass
-    {
-        public List<CardClass> cardClassesList = new List<CardClass>();
-        public string boardName;
-    }
-
-    internal class ProjectClass
-    {
-        public string projectName;
-        public List<BoardClass> boardClassList = new List<BoardClass>();
-    }
-
-    internal class UserClass
-    {
-        public string userName;
-        public string userEmail;
-        public string userPassword;
-        public List<ProjectClass> projectClassList = new List<ProjectClass>();
-    }
 }

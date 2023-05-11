@@ -21,6 +21,7 @@ namespace ZaverecnaPrace
     public partial class Profile : Window
     {
         List<string> userData = new List<string>();
+
         public Profile()
         {
             InitializeComponent();
@@ -51,6 +52,8 @@ namespace ZaverecnaPrace
                 {
                     Projects newProjects = new Projects();
                     newProjects.Show();
+                    newProjects.userName = selectedUser;
+                    newProjects.userPassword = PasswordText.Text;
                     this.Close();
                 }
             }
